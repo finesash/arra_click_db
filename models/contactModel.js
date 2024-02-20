@@ -36,4 +36,4 @@ const contacts = new Schema({
 
 
 const Contact = mongoose.model("Contact",contacts)
-module.exports=Contact;
+module.exports=Contact; 
