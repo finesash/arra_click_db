@@ -6,10 +6,11 @@ require("dotenv").config();
 app.use(express.json());
 app.use(cors());
 const contactRoute=require("./router/contactRoute")
-
+const emailRoute = require("./router/emailRoute")
 
 
 app.use("/contact",contactRoute);
+app.use("/email",emailRoute);
 
 mongoose
   .connect(process.env.MONGO_URI)
